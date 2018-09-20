@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 720px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+}
+
+
+header {
+  position: relative;
+  height: 400px;
+  background-color: #5f0fe2;
+  color: white;
+}
+
+.logo {
+    background: url("../img/logo.png");
+}
+
+h1 {
+  padding-top: 80px;
+  padding-bottom: 30px;
+  font-size: 44px;
+  text-align: center;
+}
+
+.phrase {
+    text-align: center;
+    font-size: 24px;
+    line-height: 37px;
+    width: 700px;
+    height: 130px;
+    margin: auto;
+}
+
+svg.header-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.arrow-wrapper{
+    text-align: center;
+}
+
+header svg.arrow {
+    width: 30px;
+    margin-bottom: 25px;
+}
+
+.team {
+    margin-top: 120px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.team h2 {
+    font-size: 60px;
+    font-weight: 400;
+    color: #817990;
+    padding-bottom: 25px;
+    background-color: white;
+}
+
+.team .arrow-wrapper {
+    height: 0;
+}
+
+.team svg.arrow {
+    width: 68px;
+    position: relative;
+    top: -25px;
+}
+
+
+.team-members {
+    padding: 60px 175px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.avatar_wrapper {
+    border: 5px solid #5f0fe2;
+    box-sizing: border-box;
+    border-radius: 100%;
+
+    width: 260px;
+    height: 260px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 5px solid transparent;
+    filter: none;
+
+    margin-top: -5px;
+    margin-left: -5px;
+
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+
+    /*-webkit-transform:rotate(180deg);*/
+    /*-moz-transform:rotate(180deg);*/
+    /*-o-transform:rotate(180deg);*/
+
+    cursor: pointer;
+
+    transition: all 0.5s ease;
+}
+
+.avatar:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter:    grayscale(0%);
+    -ms-filter:     grayscale(0%);
+    -o-filter:      grayscale(0%);
+    cursor: pointer;
+
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+
+}
+
+.avatar_noisy:hover {
+    border: 5px solid #ba0001;
+}
+
+.avatar_perduta:hover {
+    border: 5px solid #ffa63a;
+}
+
+.avatar_jblew:hover {
+    border: 5px solid #06b180;
+}
+
+.avatar_andrejcibik:hover {
+    border: 5px solid #d45a5d;
+}
+
+.team-member {
+    text-align: center;
+    color: #817990;
+    margin: 40px;
+}
+
+.team-member .name {
+    font-size: 24px;
+}
+.team-member .steem-login {
+    font-size: 21px;
+    color: #5f0fe2;
+}
