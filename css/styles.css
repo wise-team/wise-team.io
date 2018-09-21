@@ -5,10 +5,10 @@
 
 body {
     min-width: 720px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif, icon-font;
+    font-weight: 300;
     font-size: 48px;
 }
-
 
 header {
   position: relative;
@@ -79,7 +79,7 @@ header svg.arrow {
 
 
 .team-members {
-    padding: 60px 175px;
+    padding: 60px 130px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,21 +89,39 @@ header svg.arrow {
 }
 
 .avatar_wrapper {
-    border: 5px solid #5f0fe2;
+    /*border: 5px solid #5f0fe2;*/
+    /*float: left;*/
     box-sizing: border-box;
     border-radius: 100%;
 
     width: 260px;
     height: 260px;
-    float: left;
     margin-bottom: 20px;
+
+    cursor: pointer;
+}
+
+.avatar_wrapper::after {
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(246, 246, 246, 0) 0, rgba(246, 246, 246, 100) 100%);
+    margin-top: -130px;
+    height: 150px;
+    width: 100%;
+    content: '';
 }
 
 .avatar {
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    border: 5px solid transparent;
+    /*border: 5px solid transparent;*/
+
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+	-o-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+
     filter: none;
 
     margin-top: -5px;
@@ -118,45 +136,82 @@ header svg.arrow {
     /*-moz-transform:rotate(180deg);*/
     /*-o-transform:rotate(180deg);*/
 
-    cursor: pointer;
+    /*cursor: pointer;*/
 
     transition: all 0.5s ease;
 }
 
-.avatar:hover {
+.avatar_wrapper:hover .avatar {
     filter: none;
+    border-radius: 100%;
+
     -webkit-filter: grayscale(0%);
     -moz-filter:    grayscale(0%);
     -ms-filter:     grayscale(0%);
     -o-filter:      grayscale(0%);
-    cursor: pointer;
 
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
+    /*-webkit-transform:rotate(360deg);*/
+    /*-moz-transform:rotate(360deg);*/
+    /*-o-transform:rotate(360deg);*/
 
 }
 
-.avatar_noisy:hover {
-    border: 5px solid #ba0001;
-}
+/*.avatar_noisy:hover {*/
+    /*border: 5px solid #ba0001;*/
+/*}*/
 
-.avatar_perduta:hover {
-    border: 5px solid #ffa63a;
-}
+/*.avatar_nicniezgrublem:hover {*/
+    /*border: 5px solid #23b501;*/
+/*}*/
 
-.avatar_jblew:hover {
-    border: 5px solid #06b180;
-}
+/*.avatar_perduta:hover {*/
+    /*border: 5px solid #ffa63a;*/
+/*}*/
 
-.avatar_andrejcibik:hover {
-    border: 5px solid #d45a5d;
-}
+/*.avatar_jblew:hover {*/
+    /*border: 5px solid #878787;*/
+/*}*/
+
+/*.avatar_smashedturtle:hover {*/
+    /*border: 5px solid #6d4637;*/
+/*}*/
+
+/*.avatar_lukmarcus:hover {*/
+    /*border: 5px solid #000000;*/
+/*}*/
+
+/*.avatar_andrejcibik:hover {*/
+    /*border: 5px solid #d45a5d;*/
+/*}*/
+
+/*.avatar_lenka:hover {*/
+    /*border: 5px solid #0080dd;*/
+/*}*/
 
 .team-member {
     text-align: center;
     color: #817990;
     margin: 40px;
+    width: 260px;
+}
+
+.team-member .title {
+    text-align: left;
+    position: relative;
+    top: -40px;
+    left: -40px;
+    font-weight: 800;
+    font-size: 36px;
+    margin: 10px;
+    color: #5f0fe2;
+
+    display: flex;
+    align-items: flex-end;
+    height: 0px;
+    width: 270px;
+}
+.team-member .title.long {
+    font-size: 28px;
 }
 
 .team-member .name {
@@ -164,5 +219,25 @@ header svg.arrow {
 }
 .team-member .steem-login {
     font-size: 21px;
+    line-height: 28px;
+}
+
+.team-member .steem-login a {
     color: #5f0fe2;
+    text-decoration: none;
+}
+
+.team-member .social-links {
+    font-size: 20px;
+    height: 20px;
+    padding-top: 12px;
+}
+
+.team-member .social-links a {
+    text-decoration: none;
+    color: #817990;
+}
+
+.team-member .social-links [class^="icon-"] {
+    margin: 0 8px;
 }
