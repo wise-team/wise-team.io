@@ -108,10 +108,10 @@ header svg.arrow {
     border-radius: 100%;
     border: 5px solid transparent;
 
-    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-	-moz-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-	-webkit-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
-	-o-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+    /*box-shadow: 0 8px 18px rgba(0,0,0,0.2);*/
+	/*-moz-box-shadow: 0 8px 18px rgba(0,0,0,0.2);*/
+	/*-webkit-box-shadow: 0 8px 18px rgba(0,0,0,0.2);*/
+	/*-o-box-shadow: 0 8px 18px rgba(0,0,0,0.2);*/
 
     filter: none;
 
