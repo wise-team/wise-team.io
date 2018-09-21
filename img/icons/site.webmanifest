@@ -1,0 +1,19 @@
+{
+    "name": "Wise",
+    "short_name": "Wise",
+    "icons": [
+        {
+            "src": "https://wise-team.io/img/icons/android-chrome-192x192.png?v=qABJpEWv7J",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "https://wise-team.io/img/icons/android-chrome-512x512.png?v=qABJpEWv7J",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#6b11ff",
+    "background_color": "#6b11ff",
+    "display": "standalone"
+}
