@@ -4,7 +4,7 @@
 }
 
 body {
-    min-width: 720px;
+    min-width: 320px;
     font-family: 'Montserrat', sans-serif, icon-font;
     font-weight: 300;
     font-size: 48px;
@@ -17,8 +17,8 @@ header {
   color: white;
 }
 
-.logo {
-    background: url("../img/logo.png");
+h1 img {
+    max-width: 90%;
 }
 
 h1 {
@@ -30,10 +30,10 @@ h1 {
 
 .phrase {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 37px;
-    width: 700px;
-    height: 130px;
+    max-width: 90%;
+    height: 150px;
     margin: auto;
 }
 
@@ -79,7 +79,8 @@ header svg.arrow {
 
 
 .team-members {
-    padding: 60px 130px;
+    max-width: 1600px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -89,7 +90,7 @@ header svg.arrow {
 }
 
 .avatar_wrapper {
-    /*border: 5px solid #5f0fe2;*/
+    border: 5px solid #5f0fe2;
     /*float: left;*/
     box-sizing: border-box;
     border-radius: 100%;
@@ -101,21 +102,11 @@ header svg.arrow {
     cursor: pointer;
 }
 
-.avatar_wrapper::after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(to bottom, rgba(246, 246, 246, 0) 0, rgba(246, 246, 246, 100) 100%);
-    margin-top: -130px;
-    height: 150px;
-    width: 100%;
-    content: '';
-}
-
 .avatar {
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    /*border: 5px solid transparent;*/
+    border: 5px solid transparent;
 
     box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 	-moz-box-shadow: 0 8px 18px rgba(0,0,0,0.2);
@@ -132,12 +123,6 @@ header svg.arrow {
     -ms-filter:     grayscale(100%);
     -o-filter:      grayscale(100%);
 
-    /*-webkit-transform:rotate(180deg);*/
-    /*-moz-transform:rotate(180deg);*/
-    /*-o-transform:rotate(180deg);*/
-
-    /*cursor: pointer;*/
-
     transition: all 0.5s ease;
 }
 
@@ -150,43 +135,43 @@ header svg.arrow {
     -ms-filter:     grayscale(0%);
     -o-filter:      grayscale(0%);
 
-    /*-webkit-transform:rotate(360deg);*/
-    /*-moz-transform:rotate(360deg);*/
-    /*-o-transform:rotate(360deg);*/
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
 
 }
 
-/*.avatar_noisy:hover {*/
-    /*border: 5px solid #ba0001;*/
-/*}*/
+.avatar_noisy:hover {
+    border: 5px solid #ba0001;
+}
 
-/*.avatar_nicniezgrublem:hover {*/
-    /*border: 5px solid #23b501;*/
-/*}*/
+.avatar_nicniezgrublem:hover {
+    border: 5px solid #23b501;
+}
 
-/*.avatar_perduta:hover {*/
-    /*border: 5px solid #ffa63a;*/
-/*}*/
+.avatar_perduta:hover {
+    border: 5px solid #ffa63a;
+}
 
-/*.avatar_jblew:hover {*/
-    /*border: 5px solid #878787;*/
-/*}*/
+.avatar_jblew:hover {
+    border: 5px solid #878787;
+}
 
-/*.avatar_smashedturtle:hover {*/
-    /*border: 5px solid #6d4637;*/
-/*}*/
+.avatar_smashedturtle:hover {
+    border: 5px solid #6d4637;
+}
 
-/*.avatar_lukmarcus:hover {*/
-    /*border: 5px solid #000000;*/
-/*}*/
+.avatar_lukmarcus:hover {
+    border: 5px solid #000000;
+}
 
-/*.avatar_andrejcibik:hover {*/
-    /*border: 5px solid #d45a5d;*/
-/*}*/
+.avatar_andrejcibik:hover {
+    border: 5px solid #d45a5d;
+}
 
-/*.avatar_lenka:hover {*/
-    /*border: 5px solid #0080dd;*/
-/*}*/
+.avatar_lenka:hover {
+    border: 5px solid #0080dd;
+}
 
 .team-member {
     text-align: center;
@@ -196,22 +181,15 @@ header svg.arrow {
 }
 
 .team-member .title {
-    text-align: left;
-    position: relative;
-    top: -40px;
-    left: -40px;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 24px;
     margin: 10px;
-    color: #5f0fe2;
-
-    display: flex;
-    align-items: flex-end;
-    height: 0px;
-    width: 270px;
+    height: 38px;
 }
 .team-member .title.long {
-    font-size: 28px;
+    font-size: 20px;
+    position: relative;
+    top: -8px;
 }
 
 .team-member .name {
@@ -240,4 +218,46 @@ header svg.arrow {
 
 .team-member .social-links [class^="icon-"] {
     margin: 0 8px;
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .team-members {
+        padding: 60px 0px;
+    }
+    .phrase {
+
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+    .phrase {
+        font-size: 22px;
+        height: 130px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .phrase {
+        width: 700px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1600px) {
+
 }
