@@ -401,6 +401,123 @@ header svg.arrow {
     color: #817990;
     font-size: 26px;
 }
+/**************** Witness ********************/
+
+.section.witness {
+    padding-bottom: 50px;
+}
+
+.witness .explanation {
+    color: #817990;
+    font-size: 18px;
+    max-width: 1160px;
+    margin: 50px auto 0 auto;
+}
+.witness .explanation p {
+    margin-bottom: 20px;
+}
+
+.witness-section {
+    margin: 60px auto;
+    max-width: 1160px;
+    overflow: auto;
+    background-color: white;
+}
+
+.witness-section .map {
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.witness-section .title {
+    padding: 10px 30px;
+    color: #817990;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.witness-section .description {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+}
+
+.witness-section .description .text {
+    text-align: left;
+    padding: 0 30px;
+    color: #817990;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.position-section {
+}
+
+.position-section .table-wrapper {
+    background-color: white;
+    float: left;
+    width: calc(50% - 1px);
+    border-right: 1px #817990 solid;
+}
+
+.position-section .position-table {
+    border: none;
+    margin: 65px 20px;
+    display: block;
+    font-size: 40px;
+    color: #817990;
+    font-weight: 600;
+}
+
+.position-section .position-table tr {
+    height: 100px;
+}
+
+.position-section .position-table .position {
+    text-align: right;
+    width: 25%;
+}
+.position-section .position-table .account {
+    text-align: left;
+    padding-left: 20px;
+    min-width: 250px;
+}
+.position-section .position-table .age {
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 400;
+    position: relative;
+    top: -15px;
+}
+
+.position-section .wise {
+    color: #817990;
+}
+.position-section .noisy {
+    color: #817990;
+}
+
+.witness-section.call-to-action {
+    background-color: initial;
+}
+
+.witness-section.call-to-action .btn {
+    background-color: #5f0fe2;
+    width: 350px;
+    height: 80px;
+    margin: auto;
+    line-height: 80px;
+    color: white;
+    font-weight: 500;
+    font-size: 38px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+}
+
+
 /*********************************************/
 
 
@@ -411,7 +528,7 @@ header svg.arrow {
     .team-members,
     .projects
     {
-        padding: 60px 0px;
+        padding: 60px 0;
     }
     .phrase {
 
