@@ -285,6 +285,10 @@ header svg.arrow {
     height: 190px;
 }
 
+.project .overlay .description.long {
+    font-size: 14px;
+}
+
 .project.not-ready .overlay .description {
     height: 300px;
     display: flex;
