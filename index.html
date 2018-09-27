@@ -33,6 +33,16 @@
 
       gtag('config', 'UA-126196100-2');
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
+        });
+    </script>
 
 </head>
 
@@ -51,10 +61,10 @@
                 <polygon fill="white" points="16,0 50,23 84,0 100,23 50,56 0,23"></polygon>
             </svg>
         </div>
-
+        <a href="#witness" id="vote-for-us-1">Vote for us&nbsp;&nbsp;<i class="right-arrow15px"></i></a>
     </header>
     <div class="section team">
-        <h2>team</h2>
+        <a name="team" id="team"><h2>team</h2></a>
         <div class="arrow-wrapper">
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" preserveAspectRatio="none">
                 <polygon fill="white" points="16,0 50,23 84,0 100,23 50,56 0,23"></polygon>
@@ -180,7 +190,7 @@
     </div>
 
     <div class="section our-projects">
-        <h2>our projects</h2>
+        <a name="projects" id="projects"><h2>our projects</h2></a>
         <div class="arrow-wrapper">
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" preserveAspectRatio="none">
                 <polygon fill="white" points="16,0 50,23 84,0 100,23 50,56 0,23"></polygon>
@@ -251,7 +261,7 @@
     </div>
 
     <div class="section community-building">
-        <h2>community building</h2>
+        <a name="community-building" id="community-building"><h2>community building</h2></a>
         <div class="section-title-add">that is... what we do, to promote Steem outside the network :)</div>
         <div class="events section-items">
 
@@ -262,7 +272,7 @@
                 <div class="details">
                     <h3 class="title">How to brought 85k UU to Steem</h3>
                     <p class="description">Our CTO - @nicniezgrublem - had a chance to disclose his journey and shared his story, how he created a webservice build on top of Steem and introduce it to the outside world</p>
-                    <a class="link" href="https://steemit.com/dlive/@nicniezgrublem/b52e6300-9011-11e8-b2de-f7be8f055a16">Read more ></a>
+                    <a class="link" href="https://steemit.com/dlive/@nicniezgrublem/b52e6300-9011-11e8-b2de-f7be8f055a16">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -273,7 +283,7 @@
                 <div class="details">
                     <h3 class="title">Over 3h about Steem in Cracow</h3>
                     <p class="description">The location of upcoming SteemFest3 has already proved once to be very Steem-interested, by showing up as a huge crowd of people eager to learn from @noisy about decentralized social media.</p>
-                    <a class="link" href="https://steemit.com/steem/@noisy/my-talk-about-steem-and-its-ecosystem-during-meetup-at-crypto-cracow-poland-with-over-200-attendees-or-pl-moja-prelekcja-na">Read more ></a>
+                    <a class="link" href="https://steemit.com/steem/@noisy/my-talk-about-steem-and-its-ecosystem-during-meetup-at-crypto-cracow-poland-with-over-200-attendees-or-pl-moja-prelekcja-na">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -284,7 +294,7 @@
                 <div class="details">
                     <h3 class="title">About Steem on huge conference</h3>
                     <p class="description">@noisy was asked to give a talk on one of the biggest crypto-currency conference in Poland. This time topic of his talk was: "Blockchain Technology in Social Media - the easiest way to achieve mass adoption?" </p>
-                    <a class="link" href="https://steemit.com/steem/@noisy/steem-this-is-bigger-than-us-for-sure-bigger-than-me-pic-related">Read more ></a>
+                    <a class="link" href="https://steemit.com/steem/@noisy/steem-this-is-bigger-than-us-for-sure-bigger-than-me-pic-related">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -297,7 +307,7 @@
                     <p class="description">
                         It was a great pleasure to talk about Steem to students of own alma-mater: Wrocław University of Science and Technology. Such events are even more challenging, but later they endsup being much more rewarding :)
                     </p>
-                    <a class="link" href="https://steemit.com/steem/@noisy/i-am-giving-a-talk-about-steem-on-startup-bez-tajemnic-meetup-university-of-technology-wroclaw">Read more ></a>
+                    <a class="link" href="https://steemit.com/steem/@noisy/i-am-giving-a-talk-about-steem-on-startup-bez-tajemnic-meetup-university-of-technology-wroclaw">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -308,7 +318,7 @@
                 <div class="details">
                     <h3 class="title">Blockchain Łódź Meetup</h3>
                     <p class="description">Sometimes to give a talk, you need to travel, but 135km wasn't a lot, to talk to such an awesome audience. Even more cool was the fact, that everything from that meetups was live transmitted to the world!</p>
-                    <a class="link" href="https://steemit.com/steem/@noisy/today-i-am-going-to-talk-about-steemit-on-blockchain-lodz-meetup-in-poland">Read more ></a>
+                    <a class="link" href="https://steemit.com/steem/@noisy/today-i-am-going-to-talk-about-steemit-on-blockchain-lodz-meetup-in-poland">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -319,7 +329,7 @@
                 <div class="details">
                     <h3 class="title">4300 stickers for Steemians!</h3>
                     <p class="description">You don't have to talk about Steem on conference, to let other know, that you love it. Why not make a statement with a laptop sticker? So we bought over 4k stickers of services build on top of Steem and we give them to a community!</p>
-                    <a class="link" href="https://steemit.com/promo-steem/@noisy/i-ve-bought-4300-stickers-for-steemians-stickers-of-steem-steemit-dtube-dsound-strimi-and-utopian">Read more ></a>
+                    <a class="link" href="https://steemit.com/promo-steem/@noisy/i-ve-bought-4300-stickers-for-steemians-stickers-of-steem-steemit-dtube-dsound-strimi-and-utopian">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -332,7 +342,7 @@
                     <p class="description">
                         @noisy during his 3 months long stay in Warsaw, organized yet another meetup for Steemians. Around 25-30 Steemians came to meet in one place. There were even some guests from countries like Portugal or Japan :)
                     </p>
-                    <a class="link" href="https://steemit.com/polish/@noisy/we-would-like-to-invite-you-to-join-first-steem-warsaw-meetup-or-pl-zapraszamy-wszystkich-na-pierwszy-warszawski-steem-meetup?sort=author_reputation">Read more ></a>
+                    <a class="link" href="https://steemit.com/polish/@noisy/we-would-like-to-invite-you-to-join-first-steem-warsaw-meetup-or-pl-zapraszamy-wszystkich-na-pierwszy-warszawski-steem-meetup?sort=author_reputation">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -343,7 +353,7 @@
                 <div class="details">
                     <h3 class="title">About Steem for developers</h3>
                     <p class="description">Audience of Blockchain Wrocław Meetup was always very technical. For such an audience, a little more complicated presentation could be prepared, which unveiled a lot of technical details of Steem design. </p>
-                    <a class="link" href="https://steemit.com/steem/@blockchain-wroc/blockchain-wroclaw-meetup-talk-about-steem-and-steemit-by-krzysztof-szumny-noisy">Read more ></a>
+                    <a class="link" href="https://steemit.com/steem/@blockchain-wroc/blockchain-wroclaw-meetup-talk-about-steem-and-steemit-by-krzysztof-szumny-noisy">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -354,7 +364,7 @@
                 <div class="details">
                     <h3 class="title">Steem Wrocław Meetup</h3>
                     <p class="description">Meetup organized by @noisy, which happed to be first meetup about Steem in Poland. In next 2 years, those people helped build polish Steem community, which nowadays is one of the most active community on Steem.</p>
-                    <a class="link" href="https://steemit.com/steemit/@noisy/the-first-polish-steem-meetup-took-place-20-steemians-met-in-one-place-or-pl-odbyl-sie-pierwszy-polski-steem-meetup-20-steemian">Read more ></a>
+                    <a class="link" href="https://steemit.com/steemit/@noisy/the-first-polish-steem-meetup-took-place-20-steemians-met-in-one-place-or-pl-odbyl-sie-pierwszy-polski-steem-meetup-20-steemian">Read more <i class="right-arrow10px"></i></a>
                 </div>
             </div>
 
@@ -362,7 +372,7 @@
     </div>
 
     <div class="section witness">
-        <h2>witness</h2>
+        <a name="witness" id="witness"><h2>witness</h2></a>
         <div class="arrow-wrapper">
             <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 56" preserveAspectRatio="none">
                 <polygon fill="white" points="16,0 50,23 84,0 100,23 50,56 0,23"></polygon>
@@ -394,7 +404,7 @@
         </div>
 
             <div class="witness-section call-to-action">
-                <a class="btn" href="https://steemit.com/~witnesses">Vote for us</a>
+                <a class="btn" href="https://steemconnect.com/sign/account-witness-vote?witness=wise-team&approve=1">Vote for us</a>
             </div>
         </div>
     </div>
@@ -402,6 +412,5 @@
     <footer>
         made with <svg xmlns="http://www.w3.org/2000/svg" fill="#5f0fe2" width="24" height="24" viewBox="0 0 24 24"><path d="M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z"/></svg> by wise-team
     </footer>
-
 </body>
 </html>
