@@ -52,7 +52,18 @@
             }, 500);
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async>
+      const crate = new Crate({
+        server: '458314809004261376',
+        channel: '494927565124009984'
+      })
 
+      /*crate.notify('Test notification')
+      crate.on('signIn', data => {
+        console.log(`Guest signed in as ${data.name}`)
+        crate.emit('sendMessage', 'Hello world')
+      })*/
+    </script>
 </head>
 
 <body>
