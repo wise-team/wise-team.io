@@ -536,18 +536,73 @@ header svg.arrow {
     cursor: pointer;
     text-decoration: none;
     display: block;
+    border-radius: 40px;
+}
+
+/**************** Contact ********************/
+.section.contact {
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.contact-items {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.contact-item {
+    margin: 10px;
+}
+.contact-item.fab {
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #5f0fe2;
+    text-decoration: none;
+    border-radius: 100%;
+    line-height: 51px;
+    float: left;
+    font-size: 25px;
+}
+.contact-item.fab.fa-discord {
+    font-size: 21px;
+    line-height: 52px;
+}
+
+.contact-item.steemit {
+    line-height: 60px;
+}
+
+.contact-item.steemit svg {
+    width: 25px;
+    height: 25px;
 }
 
 
+.contact .discord-widget {
+    margin-top: 50px;
+}
+
+widgetbot {
+    width: 320px;
+    height: 700px;
+}
 /*********************************************/
 footer {
     color: #817990;
     background-color: #f6f6f6;
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 50px;
     text-align: center;
     margin: auto;
+    padding: 50px 0;
     height: 50px;
 }
 
@@ -568,6 +623,11 @@ footer svg{
     }
     .phrase {
 
+    }
+    widgetbot {
+        width: 80%;
+        max-width: 720px;
+        height: 700px;
     }
 }
 
@@ -605,7 +665,7 @@ footer svg{
     }
 
     .witness .explanation {
-        max-width: 1160px;
+        max-width: 1120px;
     }
     .witness-section {
         max-width: 1160px;
@@ -652,7 +712,11 @@ footer svg{
     .witness-section.position-section .description {
         height: initial;
     }
-
+    widgetbot {
+        width: 1120px;
+        max-width: none;
+        height: 700px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1600px) {
